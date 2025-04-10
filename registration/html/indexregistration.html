@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styleregistration.css">
+    <title>EconomiZapp -Cadastro de Produto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Produto</h1>
+        <form action="/cadastrar-produto" method="POST">
+            <label for="nome-do-produto">Nome do Produto:</label>
+            <input type="text" id="nome-do-produto" name="nome-do-produto" required>
+
+            <label for="tipo-produto">Tipo do Produto:</label>
+            <select id="tipo-produto" name="tipo-produto" required>
+                <option value="eletronico">Alimento</option>
+                <option value="moveis">Bebida</option>
+                <option value="roupas">Produto de Limpeza</option>
+                <option value="alimentos">Outros</option>
+            </select>
+            
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+    </div>
+
+    <script></script>
+</body>
+</html>
