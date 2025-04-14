@@ -3,15 +3,88 @@ margin: 0;
 padding: 0;
 }
 
-.conteudo{
-
+.nav-bar{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.cadastre-se{
-
-}
-
-.help{
+.navbar .nav-link {
     
 }
+.navbar {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+}
 
+.navbar .nav-link {
+    font-size: 16px; /* Tamanho da fonte dos links */
+    font-weight: 400; /* Peso da fonte */
+}
+
+.navbar .navbar-brand {
+    font-size: 20px; /* Tamanho da fonte do logo */
+    font-weight: 700; /* Peso da fonte do logo */
+}
+
+.navbar .nav-link.active {
+    font-weight: 400; /* Remove o peso extra */
+    color: inherit; /* Mantém a cor padrão dos links */
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 1920px;
+    height: 700px;
+}
+.hero .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    width: 50%;
+    height: 700px
+}
+.hero .img img{
+    max-width: 100%;
+    height: auto;
+    width: 590px;
+    height: 560px;
+}
+.hero .texto-hero {
+    flex: 1; /* Ocupa metade do espaço */
+    width: 50%;
+    height: 700px;
+    text-align: left;
+}
+
+.hero .texto-hero h2 {
+    font-size: 24px; /* Tamanho do título */
+    font-weight: 700; /* Negrito */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.hero .texto-hero p {
+    font-size: 16px; /* Tamanho do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+.hero .texto-hero button {
+    background-color: #41B763; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho do texto do botão */
+    cursor: pointer; /* Mostra o cursor de clique */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.hero .texto-hero button a {
+    text-decoration: none; /* Remove sublinhado do link */
+    color: white; /* Cor do texto do link */
+}
+
+.hero .texto-hero button:hover {
+    background-color: #369a52; /* Cor ao passar o mouse */
+}
