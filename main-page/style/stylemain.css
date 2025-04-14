@@ -1,6 +1,7 @@
 body{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .nav-bar{
@@ -28,59 +29,51 @@ padding: 0;
     font-weight: 400; /* Remove o peso extra */
     color: inherit; /* Mantém a cor padrão dos links */
 }
-main{
-    width: 1920px;
-}
+
 .hero{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-
+    width: 1280px;
+    height: 710px;
+    margin: 0 auto;
+    padding-top: 25px;
 }
-
-.hero .img img{
-    max-width: 100%;
-    height: auto;
-    width: 590px;
-    height: 560px;
+.hero .img{
+    width:50%;
 }
-.hero .texto-hero {
-
-    width: 50%;
-    height: 700px;
-    text-align: left;
-
+.hero .img .img-hero{
+    width: 630px;
 }
-
-.hero .texto-hero h2 {
-    font-size: 24px; /* Tamanho do título */
-    font-weight: 700; /* Negrito */
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
-    width: 50%;
+.hero  h2{
+    margin-top: 150px;
+    margin-left: 40px;
+    font-size: 52px;
 }
-
-.hero .texto-hero p {
-    font-size: 16px; /* Tamanho do texto */
-    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
-    width: 50%;
+.hero p{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 19px;
 }
-
-.hero .texto-hero button {
-    background-color: #41B763; /* Cor do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove bordas */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    font-size: 16px; /* Tamanho do texto do botão */
-    cursor: pointer; /* Mostra o cursor de clique */
-    border-radius: 5px; /* Bordas arredondadas */
+.hero .btn{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    color: #41B763;
+    border-radius: 5px;
+    border: solid 3px #41B763;
+    font-size: 16px;
+    font-weight: 500;
 }
-
-.hero .texto-hero button a {
-    text-decoration: none; /* Remove sublinhado do link */
-    color: white; /* Cor do texto do link */
+.hero .btn:hover{
+    background-color: #41B763;
+    cursor: pointer;
 }
-
-.hero .texto-hero button:hover {
-    background-color: #369a52; /* Cor ao passar o mouse */
+.hero .btn .link-hero{
+    text-decoration: none;
+    color: #41B763;
+}
+.hero .btn .link-hero:hover{
+    text-decoration: none;
+    color: white;
 }
