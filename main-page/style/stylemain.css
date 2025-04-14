@@ -28,24 +28,17 @@ padding: 0;
     font-weight: 400; /* Remove o peso extra */
     color: inherit; /* Mantém a cor padrão dos links */
 }
-
+main{
+    width: 1920px;
+}
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    width: 1280px;
     height: 700px;
-    margin: 0 auto;
+
 }
-.hero .img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    text-align: center;
-    height: 700px
-}
+
 .hero .img img{
     max-width: 100%;
     height: auto;
@@ -53,23 +46,24 @@ padding: 0;
     height: 560px;
 }
 .hero .texto-hero {
-    flex: 1; /* Ocupa metade do espaço */
+
     width: 50%;
     height: 700px;
     text-align: left;
-    padding-left: 70px;
-    padding-top: 180px;
+
 }
 
 .hero .texto-hero h2 {
     font-size: 24px; /* Tamanho do título */
     font-weight: 700; /* Negrito */
     margin-bottom: 15px; /* Espaçamento abaixo do título */
+    width: 50%;
 }
 
 .hero .texto-hero p {
     font-size: 16px; /* Tamanho do texto */
     margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+    width: 50%;
 }
 
 .hero .texto-hero button {
