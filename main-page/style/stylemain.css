@@ -17,6 +17,7 @@ padding: 0;
 .navbar .nav-link {
     font-size: 16px; /* Tamanho da fonte dos links */
     font-weight: 400; /* Peso da fonte */
+    color: #2b3f4b;
 }
 
 .navbar .navbar-brand {
@@ -28,59 +29,163 @@ padding: 0;
     font-weight: 400; /* Remove o peso extra */
     color: inherit; /* Mantém a cor padrão dos links */
 }
-main{
-    width: 1920px;
-}
+
+
+
+/*================================================================*/
+
 .hero{
+    width: 1280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-
+    margin: 0 auto;
 }
 
-.hero .img img{
-    max-width: 100%;
-    height: auto;
-    width: 590px;
-    height: 560px;
-}
-.hero .texto-hero {
-
+.hero .img{
     width: 50%;
     height: 700px;
-    text-align: left;
+}
+.hero .img img{
+    width: 100%;
+    margin-top: 25px;
+}
 
+.hero .texto-hero {
+    width: 50%;
+    height: 700%;
+    text-align: left;
+    padding-left: 50px;
 }
 
 .hero .texto-hero h2 {
-    font-size: 24px; /* Tamanho do título */
+    font-size: 50px; /* Tamanho do título */
     font-weight: 700; /* Negrito */
     margin-bottom: 15px; /* Espaçamento abaixo do título */
-    width: 50%;
+    width: 100%;
+    color: #369a52;
 }
 
 .hero .texto-hero p {
     font-size: 16px; /* Tamanho do texto */
     margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
-    width: 50%;
+    width: 100%;
+    color: #2b3f4b;
 }
 
 .hero .texto-hero button {
-    background-color: #41B763; /* Cor do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove bordas */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    font-size: 16px; /* Tamanho do texto do botão */
-    cursor: pointer; /* Mostra o cursor de clique */
-    border-radius: 5px; /* Bordas arredondadas */
-}
-
-.hero .texto-hero button a {
-    text-decoration: none; /* Remove sublinhado do link */
-    color: white; /* Cor do texto do link */
+    background-color: white; /* Cor do botão */
+    color: #2b3f4b;
+    border: 2px solid #369a52;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
 }
 
 .hero .texto-hero button:hover {
     background-color: #369a52; /* Cor ao passar o mouse */
+    color: white;
+}
+
+
+
+/*====================================================================*/
+
+.section-slide{
+    width: 100%;
+    height: 700px;
+    background-color: #369a52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-slide{
+    width: 1280px;
+    height: 620px;
+    background-color: white;
+    border-radius: 10px;
+}
+.slide{
+    border-radius: 0px;
+}
+/* Adiciona bordas arredondadas às imagens do carrossel */
+.carousel-inner img {
+    border-radius: 20px; /* Define o border-radius */
+}
+
+
+/* Estilo para os botões de navegação com imagens personalizadas */
+.carousel-control-prev img,
+.carousel-control-next img {
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste ao tamanho */
+    background-color: transparent; /* Remove o fundo */
+    border: none; /* Remove bordas */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Ajusta o tamanho do botão ao conteúdo */
+    height: auto;
+    background: none; /* Remove o fundo padrão */
+    border: none; /* Remove bordas */
+    opacity: 1; /* Garante que o botão seja visível */
+}
+
+.carousel-control-prev:hover img,
+.carousel-control-next:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+/* Estilo para os indicadores do carrossel */
+.carousel-indicators button {
+    background-color: #369a52; /* Cor padrão das barras */
+    border: none; /* Remove borda */
+    width: 12px; /* Largura do indicador */
+    height: 12px; /* Altura do indicador */
+    border-radius: 10%; /* Torna os indicadores circulares */
+}
+
+.carousel-indicators .active {
+    background-color: #2b3f4b; /* Cor do indicador ativo */
+}
+
+/* Estilo para os indicadores do carrossel */
+.carousel-indicators button {
+    background-color: #369a52 !important; /* Cor padrão das barras */
+    border: none !important; /* Remove borda */
+    width: 12px; /* Largura do indicador */
+    height: 12px; /* Altura do indicador */
+    border-radius: 0%; /* Torna os indicadores circulares */
+    opacity: 1 !important; /* Garante que a cor seja visível */
+}
+
+.carousel-indicators .active {
+    background-color: #2b3f4b !important; /* Cor do indicador ativo */
+}
+
+/*================================================================================*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1280px;
+    height: 580px;
+    margin: 0 auto;
+}
+
+footer img{
+    width: 230px;
+}
+
+footer li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
 }
