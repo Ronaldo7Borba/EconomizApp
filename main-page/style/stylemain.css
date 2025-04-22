@@ -31,17 +31,12 @@ body{
     color: inherit; /* Mantém a cor padrão dos links */
 }
 
-<<<<<<< HEAD
-
 
 /*================================================================*/
 
-=======
->>>>>>> 39205db80fda86958df2db0dabfa25cc8935348e
 .hero{
     width: 1280px;
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
     align-items: center;
     margin: 0 auto;
