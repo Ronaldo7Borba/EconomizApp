@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.nav-bar{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+}
+
+.navbar .nav-link {
+    font-size: 16px; /* Tamanho da fonte dos links */
+    font-weight: 400; /* Peso da fonte */
+    color: #2b3f4b;
+}
+
+.navbar .navbar-brand {
+    font-size: 20px; /* Tamanho da fonte do logo */
+    font-weight: 700; /* Peso da fonte do logo */
+}
+
+.navbar .nav-link.active {
+    font-weight: 400; /* Remove o peso extra */
+    color: inherit; /* Mantém a cor padrão dos links */
+}
+
+
+/*================================================================*/
+
+.hero{
+    display: flex;
+    
+}
