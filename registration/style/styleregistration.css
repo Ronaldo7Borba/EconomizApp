@@ -33,5 +33,27 @@ body{
 
 .hero{
     display: flex;
+    width: 1280px;
+    height: 675px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.hero .car{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.hero img{
+    width: 500px;
+}
+.hero .container{
+    width: 50%;
+}
+
+/*==============================================*/
+
+
+.container{
     
 }
