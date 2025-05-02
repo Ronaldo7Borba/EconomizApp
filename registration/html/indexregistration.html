@@ -47,26 +47,28 @@
         <div class="car">
             <img src="../IMG/CARRINHO-DE-COMPRA.png" alt="carrinho-supermercado">
         </div>
-        <div class="container"  class="formulario">
+        <div class="conteiner-form">
             <h1>Cadastro de Produto</h1>
-            <form action="/cadastrar-produto" method="POST"> <!--Já especificando a rota para onde o formulário será enviado-->
-                <label for="nome-do-produto">Nome do Produto:</label>
-                <input type="text" id="nome-do-produto" name="nome-do-produto" required>
-                <label for="nome-do-produto">Marca do Produto:</label>
-                <input type="text" id="marca-do-produto" name="marca-do-produto" required>
+            <div class="form">
+              <form action="/cadastrar-produto" method="POST"> <!--Já especificando a rota para onde o formulário será enviado-->
+                  <label for="nome-do-produto">Nome do Produto:</label>
+                  <input type="text" id="nome-do-produto" name="nome-do-produto" required>
+                  <label for="nome-do-produto">Marca do Produto:</label>
+                  <input type="text" id="marca-do-produto" name="marca-do-produto" required>
 
-                <label for="tipo-produto">Tipo do Produto:</label>
-                <select id="tipo-produto" name="tipo-produto" required>
-                    <option value="alimento">Alimento</option>
-                    <option value="bebida">Bebida</option>
-                    <option value="produtodelimpeza">Produto de Limpeza</option>
-                    <option value="outros">Outros</option>
-                </select>
+                  <label for="tipo-produto">Tipo do Produto:</label>
+                  <select id="tipo-produto" name="tipo-produto" required>
+                      <option value="alimento">Alimento</option>
+                      <option value="bebida">Bebida</option>
+                      <option value="produtodelimpeza">Produto de Limpeza</option>
+                      <option value="outros">Outros</option>
+                  </select>
 
-                <label for="nome-do-produto">Preço do Produto:</label>
-                <input type="text" id="preco-do-produto" name="preco-do-produto" required>
-                
-                <button type="submit">Cadastrar Produto</button>
+                  <label for="nome-do-produto">Preço do Produto:</label>
+                  <input type="text" id="preco-do-produto" name="preco-do-produto" required>
+                  
+                  <button type="submit">Cadastrar Produto</button>
+            </div>
             </form>
         </div>
 </section>
