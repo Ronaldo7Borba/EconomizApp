@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg shadow">
             <div class="container">
               <!-- Logo à esquerda -->
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="/main-page/html/indexmain.html">
                 <img src="../IMG/LOGO.png" alt="Logo" width="90" height="60">
               </a>
           
@@ -29,13 +29,10 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Cadastro</a>
+                    <a class="nav-link active" href="/main-page/html/indexmain.html">Ínicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mais...</a>
+                    <a class="nav-link" href="/help-page/html/indexhelp.html">Ajuda</a>
                   </li>
                 </ul>
               </div>
@@ -47,26 +44,28 @@
         <div class="car">
             <img src="../IMG/CARRINHO-DE-COMPRA.png" alt="carrinho-supermercado">
         </div>
-        <div class="container">
+        <div class="formulario-container">
             <h1>Cadastro de Produto</h1>
-            <form action="/cadastrar-produto" method="POST"> <!--Já especificando a rota para onde o formulário será enviado-->
-                <label for="nome-do-produto">Nome do Produto:</label>
-                <input type="text" id="nome-do-produto" name="nome-do-produto" required>
-                <label for="nome-do-produto">Marca do Produto:</label>
-                <input type="text" id="marca-do-produto" name="marca-do-produto" required>
+            <div class="form">
+              <form action="/cadastrar-produto" method="POST"> <!--Já especificando a rota para onde o formulário será enviado-->
+                  <label for="nome-do-produto">Nome do Produto:</label>
+                  <input type="text" id="nome-do-produto" name="nome-do-produto" required>
+                  <label for="nome-do-produto">Marca do Produto:</label>
+                  <input type="text" id="marca-do-produto" name="marca-do-produto" required>
 
-                <label for="tipo-produto">Tipo do Produto:</label>
-                <select id="tipo-produto" name="tipo-produto" required>
-                    <option value="alimento">Alimento</option>
-                    <option value="bebida">Bebida</option>
-                    <option value="produtodelimpeza">Produto de Limpeza</option>
-                    <option value="outros">Outros</option>
-                </select>
+                  <label for="tipo-produto">Tipo do Produto:</label>
+                  <select id="tipo-produto" name="tipo-produto" required>
+                      <option value="alimento">Alimento</option>
+                      <option value="bebida">Bebida</option>
+                      <option value="produtodelimpeza">Produto de Limpeza</option>
+                      <option value="outros">Outros</option>
+                  </select>
 
-                <label for="nome-do-produto">Preço do Produto:</label>
-                <input type="text" id="preco-do-produto" name="preco-do-produto" required>
-                
-                <button type="submit">Cadastrar Produto</button>
+                  <label for="nome-do-produto">Preço do Produto:</label>
+                  <input type="text" id="preco-do-produto" name="preco-do-produto" required>
+                  
+                  <button type="submit"><span>Cadastrar produto</span></button>
+            </div>
             </form>
         </div>
 </section>

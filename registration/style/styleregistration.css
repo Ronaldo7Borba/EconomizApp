@@ -54,6 +54,205 @@ body{
 /*==============================================*/
 
 
-.container{
-    
+.formulario-container{
+    width: 675px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #369a52;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-container h1{
+    text-align: center;
+    margin-bottom: 24px;
+    color: #369a52;
+    font-size: 2rem;
+}
+
+.formulario-container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.formulario-container label {
+    font-weight: 500;
+    color: #2b3f4b;
+    margin-bottom: 4px;
+}
+
+.formulario-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.formulario-container input:focus {
+    border-color: #369a52;
+}
+
+.formulario-container button {
+    margin-top: 16px;
+    padding: 12px;
+    background: #369a52;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.formulario-container button:hover {
+    background: #369a52;
+    transform: scale(1.02);
+}
+
+.formulario-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #2b3f4b;
+    background-color: #f8f8f8;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    appearance: none; /* Remove o estilo padrão do sistema */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='gray' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%23369a52' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px 20px;
+}
+
+.formulario-container select:focus {
+    border-color: #369a52;
+    box-shadow: 0 0 0 2px #369a5233;
+}
+
+/*======================================================================*/
+
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 12px 2vw;
+  }
+  .hero .car {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .hero img {
+    width: 140px;
+    max-width: 90vw;
+  }
+  .formulario-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 4px;
+    margin: 0;
+  }
+  .formulario-container h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Smartphones maiores e tablets pequenos */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 4vw;
+  }
+  .hero .car {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .hero img {
+    width: 200px;
+    max-width: 95vw;
+  }
+  .formulario-container {
+    width: 95%;
+    max-width: 400px;
+    padding: 16px 8px;
+    margin: 0;
+  }
+  .formulario-container h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 32px 8px;
+  }
+  .hero .car {
+    width: 45%;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .hero img {
+    width: 260px;
+    max-width: 100%;
+  }
+  .formulario-container {
+    width: 50%;
+    max-width: 420px;
+    padding: 24px 16px;
+    margin: 0;
+  }
+  .formulario-container h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Desktops pequenos e laptops */
+@media (min-width: 1025px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    width: 1280px;
+    height: 675px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .hero .car {
+    width: 50%;
+    justify-content: center;
+  }
+  .hero img {
+    width: 500px;
+  }
+  .formulario-container {
+    width: 675px;
+    max-width: 675px;
+    padding: 32px 24px;
+    margin: 0 auto;
+  }
+  .formulario-container h1 {
+    font-size: 2rem;
+  }
 }
