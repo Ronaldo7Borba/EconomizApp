@@ -2,6 +2,17 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+}
+
+p, label, input, select, button, li, a {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
 }
 
 .nav-bar{
@@ -9,23 +20,23 @@ body{
 }
 
 .navbar {
-    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    font-family: 'Poppins', Arial, sans-serif; 
 }
 
 .navbar .nav-link {
-    font-size: 16px; /* Tamanho da fonte dos links */
-    font-weight: 400; /* Peso da fonte */
+    font-size: 16px; 
+    font-weight: 400; 
     color: #2b3f4b;
 }
 
 .navbar .navbar-brand {
-    font-size: 20px; /* Tamanho da fonte do logo */
-    font-weight: 700; /* Peso da fonte do logo */
+    font-size: 20px; 
+    font-weight: 700; 
 }
 
 .navbar .nav-link.active {
-    font-weight: 400; /* Remove o peso extra */
-    color: inherit; /* Mantém a cor padrão dos links */
+    font-weight: 400; 
+    color: inherit; 
 }
 
 
@@ -70,6 +81,7 @@ body{
     margin-bottom: 24px;
     color: #369a52;
     font-size: 2rem;
+    font-weight: 700;
 }
 
 .formulario-container form{
@@ -125,7 +137,7 @@ body{
     background-color: #f8f8f8;
     transition: border-color 0.2s, box-shadow 0.2s;
     outline: none;
-    appearance: none; /* Remove o estilo padrão do sistema */
+    appearance: none; 
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='gray' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%23369a52' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");

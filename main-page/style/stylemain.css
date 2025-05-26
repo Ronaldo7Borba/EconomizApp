@@ -1,7 +1,19 @@
-body{
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+}
+
+p, label, input, select, button, li, a {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
 }
 
 .nav-bar{
@@ -9,23 +21,23 @@ body{
 }
 
 .navbar {
-    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 .navbar .nav-link {
-    font-size: 16px; /* Tamanho da fonte dos links */
-    font-weight: 400; /* Peso da fonte */
+    font-size: 16px; 
+    font-weight: 400; 
     color: #2b3f4b;
 }
 
 .navbar .navbar-brand {
-    font-size: 20px; /* Tamanho da fonte do logo */
-    font-weight: 700; /* Peso da fonte do logo */
+    font-size: 20px; 
+    font-weight: 700; 
 }
 
 .navbar .nav-link.active {
-    font-weight: 400; /* Remove o peso extra */
-    color: inherit; /* Mantém a cor padrão dos links */
+    font-weight: 400; 
+    color: inherit; 
 }
 
 
@@ -59,22 +71,22 @@ body{
 }
 
 .hero .texto-hero h2 {
-    font-size: 50px; /* Tamanho do título */
-    font-weight: 700; /* Negrito */
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    font-size: 50px; 
+    font-weight: 700; 
+    margin-bottom: 15px; 
     width: 100%;
     color: #369a52;
 }
 
 .hero .texto-hero p {
-    font-size: 16px; /* Tamanho do texto */
-    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+    font-size: 16px; 
+    margin-bottom: 20px; 
     width: 100%;
     color: #2b3f4b;
 }
 
 .hero .texto-hero button {
-    background-color: white; /* Cor do botão */
+    background-color: white; 
     color: #2b3f4b;
     border: 2px solid #369a52;
     padding: 10px 20px;
@@ -85,7 +97,7 @@ body{
 }
 
 .hero .texto-hero button:hover {
-    background-color: #369a52; /* Cor ao passar o mouse */
+    background-color: #369a52; 
     color: white;
 }
 
@@ -101,71 +113,74 @@ body{
     justify-content: center;
     align-items: center;
 }
-.bg-slide{
-    width: 1280px;
-    height: 620px;
-    background-color: white;
+.bg-slide {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    min-height: 220px;
+    background-color: #F5F5F5;
     border-radius: 10px;
+    padding: 16px 0;
+    box-sizing: border-box;
 }
 .slide{
     border-radius: 0px;
 }
-/* Adiciona bordas arredondadas às imagens do carrossel */
+
 .carousel-inner img {
-    border-radius: 20px; /* Define o border-radius */
+    border-radius: 20px; 
 }
 
 
-/* Estilo para os botões de navegação com imagens personalizadas */
 .carousel-control-prev img,
 .carousel-control-next img {
-    width: 40px; /* Largura da imagem */
-    height: 40px; /* Altura da imagem */
-    object-fit: contain; /* Garante que a imagem se ajuste ao tamanho */
-    background-color: transparent; /* Remove o fundo */
-    border: none; /* Remove bordas */
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain; 
+    background-color: transparent; 
+    border: none; 
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: auto; /* Ajusta o tamanho do botão ao conteúdo */
+    width: auto; 
     height: auto;
-    background: none; /* Remove o fundo padrão */
-    border: none; /* Remove bordas */
-    opacity: 1; /* Garante que o botão seja visível */
+    background: none; 
+    border: none; 
+    opacity: 1; 
 }
 
 .carousel-control-prev:hover img,
 .carousel-control-next:hover img {
-    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
-    transition: transform 0.3s ease; /* Animação suave */
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
 }
 
-/* Estilo para os indicadores do carrossel */
+
 .carousel-indicators button {
-    background-color: #369a52; /* Cor padrão das barras */
-    border: none; /* Remove borda */
-    width: 12px; /* Largura do indicador */
-    height: 12px; /* Altura do indicador */
-    border-radius: 10%; /* Torna os indicadores circulares */
+    background-color: #369a52; 
+    border: none; 
+    width: 12px; 
+    height: 12px; 
+    border-radius: 10%; 
 }
 
 .carousel-indicators .active {
-    background-color: #2b3f4b; /* Cor do indicador ativo */
+    background-color: #2b3f4b; 
 }
 
-/* Estilo para os indicadores do carrossel */
+
 .carousel-indicators button {
-    background-color: #369a52 !important; /* Cor padrão das barras */
-    border: none !important; /* Remove borda */
-    width: 12px; /* Largura do indicador */
-    height: 12px; /* Altura do indicador */
-    border-radius: 0%; /* Torna os indicadores circulares */
-    opacity: 1 !important; /* Garante que a cor seja visível */
+    background-color: #369a52 !important; 
+    border: none !important; 
+    width: 12px; 
+    height: 12px; 
+    border-radius: 0%; 
+    opacity: 1 !important; 
 }
 
 .carousel-indicators .active {
-    background-color: #2b3f4b !important; /* Cor do indicador ativo */
+    background-color: #2b3f4b !important; 
 }
 
 /*================================================================================*/
@@ -255,6 +270,23 @@ footer li a{
     margin-top: 0;
   }
 
+  .section-slide {
+    height: auto;
+    min-height: 220px;
+    padding: 8px 0;
+  }
+  .bg-slide {
+    max-width: 98vw;
+    min-height: 180px;
+    padding: 8px 0;
+  }
+
+  .carousel-control-prev img,
+  .carousel-control-next img {
+    width: 20px;
+    height: 20px;
+  }
+
 footer {
     flex-direction: column;
     align-items: center;
@@ -323,30 +355,48 @@ footer {
     margin-top: 0;
   }
 
-  footer {
-    flex-direction: column;
+  .section-slide {
+    height: auto;
+    min-height: 260px;
+    padding: 12px 0;
+  }
+  .bg-slide {
+    max-width: 98vw;
+    min-height: 220px;
+    padding: 12px 0;
+  }
+
+  .carousel-control-prev img,
+  .carousel-control-next img {
+    width: 28px;
+    height: 28px;
+  }
+
+ footer {
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 24px 2vw;
-    gap: 18px;
-    text-align: center;
+    padding: 18px 2vw;
+    gap: 32px; 
+    text-align: left;
     max-width: 100%;
   }
   footer img {
-    width: 110px;
-    margin-bottom: 12px;
+    width: 90px;
+    margin-bottom: 0;
   }
   footer .titulo {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   footer li a {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
-    footer .lista {
-    width: 100%;
-    text-align: center;
-    margin: 0 0 12px 0;
+  footer .lista {
+    width: auto;
+    text-align: left;
+    margin: 0 16px; 
+    padding: 0;
   }
 }
 
@@ -387,24 +437,42 @@ footer {
     margin-top: 0;
   }
 
+  .section-slide {
+    height: auto;
+    min-height: 340px;
+    padding: 16px 0;
+  }
+  .bg-slide {
+    max-width: 96vw;
+    min-height: 300px;
+    padding: 16px 0;
+  }
+
   footer {
     flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
     height: auto;
-    padding: 32px 6vw;
-    gap: 24px;
+    padding: 24px 2vw;
+    gap: 40px; 
     text-align: left;
+    max-width: 100%;
   }
   footer img {
-    width: 170px;
+    width: 140px;
     margin-bottom: 0;
   }
   footer .titulo {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   footer li a {
-    font-size: 1.15rem;
+    font-size: 1rem;
+  }
+  footer .lista {
+    width: auto;
+    text-align: left;
+    margin: 0 20px; 
+    padding: 0;
   }
 }
 
@@ -433,11 +501,13 @@ footer {
     margin-top: 25px;
   }
 
+
+
 footer {
     display: flex;
     flex-direction: row;
-    align-items: center;         /* Centraliza verticalmente */
-    justify-content: center;     /* Centraliza horizontalmente */
+    align-items: center;         
+    justify-content: center;     
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -446,7 +516,7 @@ footer {
     background: #f8f8f8;
     text-align: left;
     flex-wrap: nowrap;
-    height: 380px;               /* Garante altura suficiente */
+    height: 380px;               
   }
   footer img {
     width: 230px;

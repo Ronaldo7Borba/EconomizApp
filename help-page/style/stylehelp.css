@@ -2,30 +2,32 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Poppins', Arial, sans-serif;
 }
+
 
 .nav-bar{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
-    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    font-family: 'Poppins', Arial, sans-serif; 
 }
 
 .navbar .nav-link {
-    font-size: 16px; /* Tamanho da fonte dos links */
-    font-weight: 400; /* Peso da fonte */
+    font-size: 16px; 
+    font-weight: 400; 
     color: #2b3f4b;
 }
 
 .navbar .navbar-brand {
-    font-size: 20px; /* Tamanho da fonte do logo */
-    font-weight: 700; /* Peso da fonte do logo */
+    font-size: 20px; 
+    font-weight: 700; 
 }
 
 .navbar .nav-link.active {
-    font-weight: 400; /* Remove o peso extra */
-    color: inherit; /* Mantém a cor padrão dos links */
+    font-weight: 400; 
+    color: inherit; 
 }
 
 /*====================================================================*/
@@ -39,14 +41,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /* Opcional: centraliza verticalmente na tela */
+    min-height: 80vh; 
 }
 
 .accordion {
     width: 100%;
-    max-width: 1000px; /* Limita a largura do accordion */
+    max-width: 1000px; 
 }
-/* Mantém o tamanho dos itens */
+
 .accordion-item {
     border: 2px solid #369a52;
     border-radius: 10px;
@@ -54,7 +56,7 @@ body{
     overflow: hidden;
 }
 
-/* Botão do accordion com fundo verde e texto branco */
+
 .accordion-button {
     background: #369a52 !important;
     color: #fff !important;
@@ -66,24 +68,24 @@ body{
     transition: background 0.2s, color 0.2s;
 }
 
-/* Quando aberto, mantém o fundo verde */
+
 .accordion-button:not(.collapsed) {
     background: #369a52 !important;
     color: #fff !important;
 }
 
-/* Quando fechado, mantém o fundo verde */
+
 .accordion-button.collapsed {
     background: #369a52 !important;
     color: #fff !important;
 }
 
-/* Personaliza a seta do accordion para branco */
+
 .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='white' stroke-width='3' viewBox='0 0 16 16'%3E%3Cpath d='M2 6l6 6 6-6'/%3E%3C/svg%3E") !important;
 }
 
-/* Força a cor da borda e sombra ao abrir/focar */
+
 .accordion-button:focus,
 .accordion-button:not(.collapsed) {
     border-color: #369a52 !important;
@@ -91,7 +93,7 @@ body{
     outline: none !important;
 }
 
-/* Remove qualquer outline azul */
+
 .accordion-button:focus-visible {
     outline: none !important;
 }
@@ -190,4 +192,22 @@ body{
     font-size: 1.08rem;
     padding: 20px 16px;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700; /* Negrito para títulos */
+}
+
+p, label, input, select, button, li, a {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400; /* Regular para textos */
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
 }
